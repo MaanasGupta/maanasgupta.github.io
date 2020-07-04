@@ -53,7 +53,10 @@
             <div class="timeline">
 				<div class="timeline-box">
 					<div>
-                            <img src="images\DAV_Institute_of_Engineering__Technology.jpg">
+						<a href="images\DAV_Institute_of_Engineering__Technology.jpg" class="portfolio-popup">
+						<img src="images\DAV_Institute_of_Engineering__Technology.jpg" style="height: 400; width: 300; margin-left: -20;"alt="">
+						</a>
+
                     </div>
 					<h3 class="experience-designation  m0 m-blue text-white"> B.Tech (Electronic & Communication Engg.)</h3>
                     <h4 class="experience-company-name"> DAV Institute of Engineering and Technology (PTU Kapurthala) </h4>
@@ -86,6 +89,23 @@
 			</div>
 			
 		</section>
-		
+		<script>
+		  $('.portfolio-popup').magnificPopup({
+    type: 'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: 'ease-in-out',
+      opener: function (openerElement) {
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    }
+  });
+  </script>
 </body>
 </html>
