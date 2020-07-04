@@ -227,46 +227,35 @@ section:nth-child(2n){
 
 
 
-#portfolio-display{
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-#portfolio-display .img-1 img{
-	height: 160px;
-	width: 160px;
-	margin: 5px 40px 40px 5px;
+#portfolio .portfolio-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
 }
 
-#portfolio-display .img-2 img{
-	height: 160px;
-	width: 160px;
-	margin: 5px 40px 40px 5px;
+#portfolio .portfolio-item h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 700;
 }
-.img__description{
-	position: absolute;
-  	top: 0;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	background: rgba(29, 106, 154, 0.72);
-  	color: #fff;
-  	visibility: hidden;
-  	opacity: 0;
 
+#portfolio .portfolio-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
 }
-.img-2:hover .img__description{
-	background-color: grey;
-	border-radius: 10px;
-	visibility: visible;
-	opacity: 1;
+
+#portfolio .portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.img-1:hover .img__description{
-	background-color: grey;
-	border-radius: 10px;
-	visibility: visible;
-	opacity: 1;
+
+#portfolio .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 
