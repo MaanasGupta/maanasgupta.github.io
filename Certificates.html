@@ -53,11 +53,10 @@
             <div class="timeline">
 				<div class="timeline-box">
 					<div>
-						<div class="portfolio-item wow fadeInUp">
 						<a href="images\DAV_Institute_of_Engineering__Technology.jpg" class="portfolio-popup">
 						<img src="images\DAV_Institute_of_Engineering__Technology.jpg" style="height: 400; width: 300; margin-left: -20;"alt="">
 						</a>
-						</div>
+
                     </div>
 					<h3 class="experience-designation  m0 m-blue text-white"> B.Tech (Electronic & Communication Engg.)</h3>
                     <h4 class="experience-company-name"> DAV Institute of Engineering and Technology (PTU Kapurthala) </h4>
@@ -90,8 +89,6 @@
 			</div>
 			
 		</section>
-		  <script src="lib/wow/wow.min.js"></script>
-
 		<script>
 		  $('.portfolio-popup').magnificPopup({
     type: 'image',
@@ -108,6 +105,8 @@
         return openerElement.is('img') ? openerElement : openerElement.find('img');
       }
     }
+	zoom:{
+	enabled: false}
   });
   </script>
 </body>
